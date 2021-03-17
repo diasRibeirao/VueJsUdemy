@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas: v-show</title>
+</head>
+<body>
+
+    <div id="directive">
+
+        <h1 v-show="isLogged">Seja bem-vindo a Área Adminsitrativa</h1>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+
+    <script>
+        
+        let app = new Vue({
+            el: '#directive', 
+            data: {
+                isLogged: true
+            }
+        })
+
+    </script>
+</body>
+</html>
